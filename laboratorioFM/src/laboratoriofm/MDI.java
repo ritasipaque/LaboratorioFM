@@ -10,7 +10,8 @@ package laboratoriofm;
  * @author familia Sipaque
  */
 public class MDI extends javax.swing.JFrame {
-
+private registrosclientes nuevaventana1;
+private Registrosdeexistencia  nuevaventana2;
     /**
      * Creates new form MDI
      */
@@ -62,10 +63,20 @@ public class MDI extends javax.swing.JFrame {
         jMenu1.setText("Catalogos");
         jMenu1.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
 
-        jMenuItem2.setText("jMenuItem2");
+        jMenuItem2.setText("Registro de Clientes");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
         jMenu1.add(jMenuItem2);
 
-        jMenuItem3.setText("jMenuItem3");
+        jMenuItem3.setText("Registro de Existencia");
+        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem3ActionPerformed(evt);
+            }
+        });
         jMenu1.add(jMenuItem3);
 
         jMenuBar1.add(jMenu1);
@@ -117,6 +128,23 @@ public class MDI extends javax.swing.JFrame {
         // TODO add your handling code here:
         dispose();
     }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        // TODO add your handling code here:
+        
+       nuevaventana1= new registrosclientes();   
+     jDesktopPane1.add(nuevaventana1); 
+        
+        
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
+
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+        // TODO add your handling code here:
+        
+        nuevaventana2= new Registrosdeexistencia();   
+     jDesktopPane1.add(nuevaventana2); 
+        
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     /**
      * @param args the command line arguments
