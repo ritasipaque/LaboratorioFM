@@ -60,7 +60,7 @@ public class registrosclientes extends javax.swing.JInternalFrame {
 
         jLabel1.setFont(new java.awt.Font("Arial Black", 0, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 204, 204));
-        jLabel1.setText("Almacenamiento de Empleados ");
+        jLabel1.setText("Registro de Clientes FilmMagic ");
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel3.setText("Nombre del Cliente : ");

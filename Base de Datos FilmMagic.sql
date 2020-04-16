@@ -13,3 +13,6 @@ DireccionCliente  varchar (45)NOT NULL,
 SexoCliente VARCHAR (45) NOT NULL
  )ENGINE = InnoDB DEFAULT 
 CHARSET = latin1;
+
+USE  bd_insOriginal;
+SELECT * FROM   RegistroCliente
