@@ -63,7 +63,7 @@
                                                   <Component id="txt_estreno" alignment="0" min="-2" pref="256" max="-2" attributes="0"/>
                                                   <Component id="txt_tipo" alignment="0" min="-2" max="-2" attributes="0"/>
                                                   <Component id="txt_idioma" alignment="0" min="-2" pref="261" max="-2" attributes="0"/>
-                                                  <Component id="txt_calidad" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="txt_calidad" alignment="0" min="-2" pref="91" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                       </Group>
@@ -186,7 +186,7 @@
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace pref="22" max="32767" attributes="0"/>
+              <EmptySpace pref="26" max="32767" attributes="0"/>
           </Group>
           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">

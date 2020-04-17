@@ -59,28 +59,28 @@ public class registrosclientes extends javax.swing.JInternalFrame {
         setVisible(true);
 
         jLabel1.setFont(new java.awt.Font("Arial Black", 0, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 204, 204));
+        jLabel1.setForeground(new java.awt.Color(255, 0, 51));
         jLabel1.setText("Registro de Clientes FilmMagic ");
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel3.setText("Nombre del Cliente : ");
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel4.setText("Apellido  del Cliente:");
 
-        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel6.setText("Direccion del Cliente");
 
-        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel8.setText("Telefono del Cliente");
 
-        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel9.setText("CorreoElectronico :");
 
-        jLabel10.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel10.setText("Sexo del Cliente: ");
 
-        jLabel11.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel11.setText("No. de DPI Cliente:");
 
         jButton1.setText("Registrar");
@@ -90,7 +90,7 @@ public class registrosclientes extends javax.swing.JInternalFrame {
             }
         });
 
-        jLabel13.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel13.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel13.setText("Ingrese el codigo del empleado :");
 
         jButton5.setText("Modificar");
@@ -110,7 +110,7 @@ public class registrosclientes extends javax.swing.JInternalFrame {
         label_status.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         label_status.setForeground(new java.awt.Color(255, 51, 51));
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel2.setText("Edad del Cliente:");
 
         txt_sexo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Femenino", "Masculino", " " }));
@@ -185,14 +185,14 @@ public class registrosclientes extends javax.swing.JInternalFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(134, 134, 134)
                                 .addComponent(txt_correo, javax.swing.GroupLayout.PREFERRED_SIZE, 296, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(74, 74, 74)
+                                .addGap(40, 40, 40)
                                 .addComponent(jLabel10)
-                                .addGap(28, 28, 28)
-                                .addComponent(txt_sexo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addGap(18, 18, 18)
+                                .addComponent(txt_sexo, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(29, Short.MAX_VALUE))
+                .addContainerGap(18, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -202,12 +202,16 @@ public class registrosclientes extends javax.swing.JInternalFrame {
                         .addContainerGap()
                         .addComponent(jLabel1))
                     .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(7, 7, 7)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel8)
-                    .addComponent(jLabel11)
-                    .addComponent(txt_dpi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txt_telefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(7, 7, 7)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel8)
+                            .addComponent(txt_dpi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txt_telefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel11)))
                 .addGap(32, 32, 32)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
@@ -238,7 +242,7 @@ public class registrosclientes extends javax.swing.JInternalFrame {
                     .addComponent(jButton2))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(label_status, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(15, Short.MAX_VALUE))
         );
 
         pack();
@@ -260,7 +264,7 @@ public class registrosclientes extends javax.swing.JInternalFrame {
             pst.setString(7, txt_edad.getText().trim());
             pst.setString(8, txt_correo.getText().trim());
             pst.setString(9, txt_sexo.getSelectedItem().toString());
-            pst.executeUpdate();
+            pst.executeUpdate();      
 
             txt_dpi.setText("");
             txt_nombre.setText("");
@@ -270,7 +274,7 @@ public class registrosclientes extends javax.swing.JInternalFrame {
             txt_edad.setText("");
             txt_correo.setText("");
             txt_sexo.setSelectedItem("");
-
+                             
             label_status.setText("Registro de Clientes exitoso.");
         } catch (Exception e) {
 
@@ -339,7 +343,7 @@ public class registrosclientes extends javax.swing.JInternalFrame {
                 txt_dpi.setText(rs.getString("DPICliente"));
                 txt_nombre.setText(rs.getString("NombreCliente"));
                 txt_apellido.setText(rs.getString("ApellidoCliente"));
-                txt_sexo.setSelectedItem("SexoCliente");
+                txt_sexo.setSelectedItem(rs.getString("SexoCliente"));
                 txt_Direccion.setText(rs.getString("DireccionCliente"));
                 txt_telefono.setText(rs.getString("TelefonoCliente"));
 
