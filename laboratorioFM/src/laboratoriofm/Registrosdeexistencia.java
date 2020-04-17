@@ -293,12 +293,12 @@ public class Registrosdeexistencia extends javax.swing.JInternalFrame {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
 
         try {
-            Connection cn = DriverManager.getConnection("jdbc:mysql://localhost/ bd_insregistromovies", "root", "");
+            Connection cn = DriverManager.getConnection("jdbc:mysql://localhost/bd_insregistromovies","root","");
             PreparedStatement pst = cn.prepareStatement("delete from Registropeliculas where ID = ?");
 
             pst.setString(1, txt_buscar.getText().trim());
             pst.executeUpdate();
-
+             
             txt_titulo.setText("");
             txt_genero.setSelectedItem("");
             txt_autor.setText("");
@@ -307,6 +307,7 @@ public class Registrosdeexistencia extends javax.swing.JInternalFrame {
             txt_duracion.setText("");
             txt_subtitulos.setText("");
             txt_clasificacion.setText("");
+            
 
             label_status.setText("Registro  de Peliculas eliminado.");
 

@@ -392,7 +392,7 @@ public class registroatrasado extends javax.swing.JInternalFrame {
             pst.setString(10, txt_tot3.getText().trim());
             pst.executeUpdate();
 
-            label_status.setText("Modificacion  de VideoJuegos exitoso.");
+            label_status.setText("Modificacion del Registro exitoso.");
 
         } catch (Exception e) {
         }
@@ -420,7 +420,7 @@ public class registroatrasado extends javax.swing.JInternalFrame {
             txt_tot2.setText("");
             txt_tot3.setText("");
 
-            label_status.setText("Registro  de VideoJuegos  eliminado.");
+            label_status.setText("Registro  eliminado.");
 
         } catch (Exception e) {
         }
@@ -452,7 +452,7 @@ public class registroatrasado extends javax.swing.JInternalFrame {
                 txt_tot3.setText(rs.getString("Total"));
 
             } else {
-                JOptionPane.showMessageDialog(null, "VideoJuego No registrado.");
+                JOptionPane.showMessageDialog(null, "Registro No registrado.");
             }
 
         } catch (Exception e) {
@@ -530,7 +530,7 @@ public class registroatrasado extends javax.swing.JInternalFrame {
             txt_tot2.setText("");
             txt_tot3.setText("");
 
-            label_status.setText("Registro de VideoJuegos  exitoso.");
+            label_status.setText("Registro   exitoso.");
         } catch (Exception e) {
 
         }
