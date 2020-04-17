@@ -12,6 +12,8 @@ package laboratoriofm;
 public class MDI extends javax.swing.JFrame {
 private registrosclientes nuevaventana1;
 private Registrosdeexistencia  nuevaventana2;
+private Registrosvideosjuegos nuevaventana3;
+private registroatrasado nuevaventana4;
     /**
      * Creates new form MDI
      */
@@ -83,6 +85,11 @@ private Registrosdeexistencia  nuevaventana2;
         jMenu1.add(jMenuItem3);
 
         jMenuItem5.setText("Registro de VideoJuegos");
+        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem5ActionPerformed(evt);
+            }
+        });
         jMenu1.add(jMenuItem5);
 
         jMenuBar1.add(jMenu1);
@@ -91,7 +98,12 @@ private Registrosdeexistencia  nuevaventana2;
         jMenu2.setText("Proceso");
         jMenu2.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
 
-        jMenuItem4.setText("jMenuItem4");
+        jMenuItem4.setText("Requerimiento4");
+        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem4ActionPerformed(evt);
+            }
+        });
         jMenu2.add(jMenuItem4);
 
         jMenuBar1.add(jMenu2);
@@ -151,6 +163,22 @@ private Registrosdeexistencia  nuevaventana2;
      jDesktopPane1.add(nuevaventana2); 
         
     }//GEN-LAST:event_jMenuItem3ActionPerformed
+
+    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
+        // TODO add your handling code here:
+        
+        nuevaventana3= new Registrosvideosjuegos();   
+     jDesktopPane1.add(nuevaventana3); 
+    }//GEN-LAST:event_jMenuItem5ActionPerformed
+
+    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
+        // TODO add your handling code here:
+        nuevaventana4= new registroatrasado();   
+     jDesktopPane1.add(nuevaventana4); 
+        
+        
+        
+    }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     /**
      * @param args the command line arguments
